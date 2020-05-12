@@ -13,7 +13,7 @@ PitchPerfect is an iOS App for recording your voice and playing it at different 
   * Xcode Version   - 11.3.1
   * OS Version      - 10.0+
 
-## FrameWorks
+## Frameworks Used
   * [Foundation](https://developer.apple.com/documentation/foundation)
   * [UIKit](https://developer.apple.com/documentation/uikit)
   * [AVFoundation](https://developer.apple.com/documentation/avfoundation)
