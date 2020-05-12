@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Record Sounds View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="RecordSoundsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,44 +15,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4V-GW-Maj">
-                                <rect key="frame" x="129.5" y="370.5" width="155" height="155"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="Record"/>
-                                <connections>
-                                    <action selector="didTapRecordBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RfX-1h-C50"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oem-qr-6dH">
-                                <rect key="frame" x="153.5" y="540.5" width="107" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhN-Xr-qrA">
-                                <rect key="frame" x="175" y="576.5" width="64" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="qd1-B6-u4N"/>
-                                    <constraint firstAttribute="height" constant="64" id="yD5-mc-dsv"/>
-                                </constraints>
-                                <state key="normal" image="Stop"/>
-                                <connections>
-                                    <action selector="didTapStopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABy-WT-0oP"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vhe-2q-Zsg">
+                                <rect key="frame" x="129.5" y="313.5" width="155" height="269.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4V-GW-Maj">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="Record"/>
+                                        <connections>
+                                            <action selector="didTapRecordBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RfX-1h-C50"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oem-qr-6dH">
+                                        <rect key="frame" x="24.5" y="170" width="106.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhN-Xr-qrA">
+                                        <rect key="frame" x="45.5" y="205.5" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="qd1-B6-u4N"/>
+                                            <constraint firstAttribute="height" constant="64" id="yD5-mc-dsv"/>
+                                        </constraints>
+                                        <state key="normal" image="Stop"/>
+                                        <connections>
+                                            <action selector="didTapStopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABy-WT-0oP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="zhN-Xr-qrA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Wp-8L-XtV"/>
-                            <constraint firstItem="a4V-GW-Maj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BnU-Ky-mR6"/>
-                            <constraint firstItem="zhN-Xr-qrA" firstAttribute="top" secondItem="oem-qr-6dH" secondAttribute="bottom" constant="15" id="Boj-b7-34W"/>
-                            <constraint firstItem="a4V-GW-Maj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aob-7H-3O4"/>
-                            <constraint firstItem="oem-qr-6dH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lvG-KC-Nf5"/>
-                            <constraint firstItem="oem-qr-6dH" firstAttribute="top" secondItem="a4V-GW-Maj" secondAttribute="bottom" constant="15" id="y9D-8u-IJQ"/>
+                            <constraint firstItem="vhe-2q-Zsg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dDL-j5-npT"/>
+                            <constraint firstItem="vhe-2q-Zsg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y5z-eC-e8d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sh0-oW-hiy"/>
+                    <navigationItem key="navigationItem" title="Home" id="sh0-oW-hiy"/>
                     <connections>
                         <outlet property="btnRecord" destination="a4V-GW-Maj" id="aLI-kx-KQg"/>
                         <outlet property="btnStopRecording" destination="zhN-Xr-qrA" id="r4C-a0-PRq"/>
@@ -64,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
         </scene>
-        <!--Play Sounds View Controller-->
+        <!--Play Sounds-->
         <scene sceneID="ZBu-bo-v49">
             <objects>
                 <viewController storyboardIdentifier="PlaySoundsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fer-jo-0tS" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
@@ -170,7 +171,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C80-FL-kBa"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cgI-eJ-Wex"/>
+                    <navigationItem key="navigationItem" title="Play Sounds" id="cgI-eJ-Wex"/>
                     <connections>
                         <outlet property="chipmunkButton" destination="TBH-01-Cyw" id="DRf-cU-fGm"/>
                         <outlet property="echoButton" destination="8Kd-dL-MW3" id="zF0-1i-prI"/>
@@ -183,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L8Z-gQ-xlg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1769.5652173913045" y="126.5625"/>
+            <point key="canvasLocation" x="1858" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zqi-gh-3oF">
