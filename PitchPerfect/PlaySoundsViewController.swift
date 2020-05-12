@@ -44,11 +44,7 @@ class PlaySoundsViewController: UIViewController {
         super.viewWillAppear(true)
         configureUI(.notPlaying)
     }
-    
-    
-    //MARK:- Extra Methods
-    
-    
+
     
     //MARK:- @IBActions
    @IBAction func playSoundForButton(_ sender: UIButton) {
@@ -71,7 +67,7 @@ class PlaySoundsViewController: UIViewController {
    }
 
    @IBAction func stopButtonPressed(_ sender: AnyObject) {
-       print("Stop Audio Button Pressed")
+        print("Stop Audio Button Pressed")
         stopAudio()
    }
 
