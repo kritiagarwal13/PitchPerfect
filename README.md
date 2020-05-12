@@ -1,5 +1,5 @@
 # PitchPerfect
-![](https://raw.githubusercontent.com/kritiagarwal13/PitchPerfect/master/PitchPerfect/Assets.xcassets/Icon-83.5pt.imageset/Icon-83.5pt.png) 
+![](https://raw.githubusercontent.com/kritiagarwal13/PitchPerfect/master/PitchPerfect/Assets.xcassets/AppIcon.appiconset/Icon-83.5pt.png) 
 
 PitchPerfect is an iOS App for recording your voice and playing it at different audio frequency and pitch. It has got 6 features for you to modulate and listen to your voice to. These are:-
   * Slow (Snail slow)
