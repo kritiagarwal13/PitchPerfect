@@ -18,3 +18,6 @@ PitchPerfect is an iOS App for recording your voice and playing it at different 
   * [Foundation](https://developer.apple.com/documentation/foundation)
   * [UIKit](https://developer.apple.com/documentation/uikit)
   * [AVFoundation](https://developer.apple.com/documentation/avfoundation)
+
+## Credits
+The assets and the concept idea was part of the Udacity - Nanodegree Course for iOS App Development. 
