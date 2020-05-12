@@ -8,6 +8,9 @@ PitchPerfect is an iOS App for recording your voice and playing it at different 
   * High Pitch (Darth Vadar)
   * Echo (Parrot)
   * Reverb
+  
+## Screenshots
+<img src = "https://raw.githubusercontent.com/kritiagarwal13/PitchPerfect/master/raw/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-05-12%20at%2019.01.08.png" width = "200" height = "350">  <img src = "https://raw.githubusercontent.com/kritiagarwal13/PitchPerfect/master/raw/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-05-12%20at%2019.01.16.png" width = "200" height = "350">  <img src = "https://raw.githubusercontent.com/kritiagarwal13/PitchPerfect/master/raw/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-05-12%20at%2019.01.19.png" width = "200" height = "350">  <img src = "https://raw.githubusercontent.com/kritiagarwal13/PitchPerfect/master/raw/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-05-12%20at%2019.01.23.png" width = "200" height = "350">
  
 ## Compatibility
   * Swift Version   - Swift5
